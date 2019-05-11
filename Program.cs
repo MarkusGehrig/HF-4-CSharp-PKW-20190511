@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 namespace PKW_20190511
 {
     // Hier baue ich meine PKW-Klasse
-    class PKW
+    abstract class Kraftfahrzeuge
     {
         /// <summary>
         /// Länge des Autos
@@ -34,10 +34,10 @@ namespace PKW_20190511
         /// <summary>
         /// Konstruktor
         /// </summary>
-        /// <param name="t_leange">Länge des Autos</param>
-        /// <param name="t_gewicht">Gewicht des Autos</param>
-        /// <param name="t_sitze">Anzahl Sitze des Autos</param>
-        public PKW(double t_leange, int t_gewicht, int t_sitze)
+        /// <param name="t_leange">Länge des Fahrzeuges</param>
+        /// <param name="t_gewicht">Gewicht des Fahrzeuges</param>
+        /// <param name="t_sitze">Anzahl Sitze des Fahrzeuges</param>
+        public Kraftfahrzeuge(double t_leange, int t_gewicht, int t_sitze)
             :this(t_leange, t_gewicht)
         {
             Gewicht         = t_gewicht;
@@ -48,9 +48,9 @@ namespace PKW_20190511
         /// <summary>
         /// Konstruktor
         /// </summary>
-        /// <param name="t_leange">Länge des Autos</param>
-        /// <param name="t_gewicht">Gewicht des Autos</param>
-        public PKW(double t_leange, int t_gewicht)
+        /// <param name="t_leange">Länge des Fahrzeuges</param>
+        /// <param name="t_gewicht">Gewicht des Fahrzeuges</param>
+        public Kraftfahrzeuge(double t_leange, int t_gewicht)
         {
             Gewicht = t_gewicht;
             Laenge = t_leange;
@@ -68,6 +68,47 @@ namespace PKW_20190511
 
         }
     }
+
+    class PKW : Kraftfahrzeuge
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="t_leange">Länge des PKW</param>
+        /// <param name="t_gewicht">Gewicht des PKW</param>
+        /// <param name="t_sitze">Anazhl Sitze des PKW</param>
+        public PKW(double t_leange, int t_gewicht, int t_sitze)
+            :base(t_leange, t_gewicht, t_sitze)
+        {
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="t_leange">Länge des PKW</param>
+        /// <param name="t_gewicht">Gewicht des PKW</param>
+        public PKW(double t_leange, int t_gewicht)
+            : base(t_leange, t_gewicht)
+        {
+
+        }
+    }
+
+    class LKW : Kraftfahrzeuge
+    {
+        public LKW(double t_leange, int t_gewicht, int t_sitze)
+            : base(t_leange, t_gewicht, t_sitze)
+        {
+
+        }
+
+        public LKW(double t_leange, int t_gewicht)
+            : base(t_leange, t_gewicht)
+        {
+
+        }
+    } 
 
     class Program
     {
