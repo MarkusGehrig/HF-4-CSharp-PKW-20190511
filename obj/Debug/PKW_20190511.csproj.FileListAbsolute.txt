@@ -1,0 +1,7 @@
+c:\users\marku\source\repos\PKW_20190511\PKW_20190511\bin\Debug\PKW_20190511.exe.config
+c:\users\marku\source\repos\PKW_20190511\PKW_20190511\bin\Debug\PKW_20190511.exe
+c:\users\marku\source\repos\PKW_20190511\PKW_20190511\bin\Debug\PKW_20190511.pdb
+c:\users\marku\source\repos\PKW_20190511\PKW_20190511\obj\Debug\PKW_20190511.csprojResolveAssemblyReference.cache
+c:\users\marku\source\repos\PKW_20190511\PKW_20190511\obj\Debug\PKW_20190511.csproj.CoreCompileInputs.cache
+c:\users\marku\source\repos\PKW_20190511\PKW_20190511\obj\Debug\PKW_20190511.exe
+c:\users\marku\source\repos\PKW_20190511\PKW_20190511\obj\Debug\PKW_20190511.pdb
